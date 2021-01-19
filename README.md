@@ -10,12 +10,18 @@
 ## Home
     ### html
         - header
-        - button that links to products page
+        //- button that links to products page
     
     ### js
-        - DOM elements
-            - button
-        - Add event listener to link to products page
+        //- DOM elements
+            //- button
+        //- Add event listener to link to products page
+
+    ### css
+        - Basic style
+            - font
+            - background color
+            - text color
 
 ## Products
     ### html
