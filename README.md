@@ -18,10 +18,10 @@
         //- Add event listener to link to products page
 
     ### css
-        - Basic style
-            - font
-            - background color
-            - text color
+        //- Basic style
+            //- font
+            //- background color
+            //- text color
 
 ## Products
     ### html

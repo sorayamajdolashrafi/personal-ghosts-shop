@@ -6,12 +6,7 @@ body, html {
     align-items: center;
 }
 
-button {
-    height: 50px;
-    width: auto;
-    background-color: ivory;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-
+label:hover {
+    color: rgba(255, 255, 240, .5);
+    cursor: pointer;
 }

@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-const buttonToProducts = document.getElementById('link-to-products');
+const buttonToProducts = document.getElementById('link-to-products-button');
 // initialize state
 
 // set event listeners to update state and DOM

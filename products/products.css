@@ -1,0 +1,53 @@
+ul {
+    width: 60%;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: ivory 2px solid;
+    border-radius: 2px;
+    padding: 20px;
+    box-shadow: ivory -8px 8px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+li p {
+    font-size: .7rem;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px 0px 0px;
+}
+
+button {
+    height: 30px;
+    background: ivory;
+    color: rgb(27, 27, 27);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: ivory 3px solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(121, 255, 210);
+    border: ivory 3px solid;
+    border-radius: 5px;
+}
+
+button:focus {
+    background: rgb(27, 27, 27);
+    color: ivory;
+    border: rgb(27, 27, 27) 3px solid;
+    border-radius: 5px;
+}
