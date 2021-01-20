@@ -26,6 +26,10 @@ li p {
     text-align: center;
 }
 
+p.ghost-category {
+    font-style: italic;
+}
+
 img {
     height: 200px;
     width: 200px;

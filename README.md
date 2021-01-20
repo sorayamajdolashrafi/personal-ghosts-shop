@@ -35,18 +35,18 @@
                 - Value is the product id.
 
     ### js
-        - Object Literal
-            - Write out object literals for each product
-            - Store in a variable with same name as product id. 
+        //- Object Literal
+            //- Write out object literals for each product
+            //- Store in a variable with same name as product id. 
             
             These objects are key/value pairs whose values uniquely describe each product. All products should have exactly the same keys!
 
-        - Create a variable that is an array of all of your products
-        - Export this array.
+        //- Create a variable that is an array of all of your products
+        //- Export this array.
 
         - TDD
-            1. Copy/paste the html element
-            2. copy/paste the product dad for one listing to use as the input of the function
+            //1. Copy/paste the html element
+            //2. copy/paste the product data for one listing to use as the input of the function
             3. Using DOM API, create a static example. Start by creating the top level element and work down (like the warmup).
             4. Make the test pass, pay attention to the details.
 
