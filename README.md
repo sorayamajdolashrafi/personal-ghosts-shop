@@ -1,1 +1,116 @@
-# EDIT-THIS-README
+# E-Commerce
+
+## What am I selling?
+    - Ghosts?
+    - Art?
+    - Tigers?
+
+    Ghosts, we're selling ghosts.
+
+## Home
+    ### html
+        - header
+        //- button that links to products page
+    
+    ### js
+        //- DOM elements
+            //- button
+        //- Add event listener to link to products page
+
+    ### css
+        //- Basic style
+            //- font
+            //- background color
+            //- text color
+
+## Products
+    ### html
+        //- <ul> to hold the listings
+        //- Inital ghost layout posting to be able to visualize it.
+            //- Title
+            //- Image
+            //- Description
+            //- Price
+            //- Button to add to cart.
+                - Value is the product id.
+
+    ### js
+        //- Object Literal
+            //- Write out object literals for each product
+            //- Store in a variable with same name as product id. 
+            
+            These objects are key/value pairs whose values uniquely describe each product. All products should have exactly the same keys!
+
+        //- Create a variable that is an array of all of your products
+        //- Export this array.
+
+        - TDD
+            //1. Copy/paste the html element
+            //2. copy/paste the product data for one listing to use as the input of the function
+            //3. Using DOM API, create a static example. Start by creating the top level element and work down (like the warmup).
+            //4. Make the test pass, pay attention to the details.
+
+        - Generate Product List
+            //- Import functions and DOM elements
+            //- Locate where the products will go <ul>
+            //- Loop through the data.
+                //1. create a variable that is the singular of the list and assign based on the current array index 
+                    const ghost = ghosts[i];
+                //2. Pass to your DOM generation function and capture reult in variable
+                //3. Append to the top-level list element.
+
+## Cart
+
+//notes:
+    1. Get the ghost id from the cart.
+    2. Loop through the ghosts array.
+    3 For each ghost check the id
+        - if it is a match with the item in the cart, grab the price
+        - if not, move on to the next item.
+    4. Store price
+    5. Get quantity from the cart object
+    6. store the quantity
+    7. totalPrice is now stored quantity x stored price.
+
+    findById function (id, array) {
+       // return 'the item whose id matches the supplied id';
+       // iterate/loop through the array
+
+       for (let item of array) {
+           if (item.id === id) {
+               return item;
+           }
+       }
+
+    }
+
+    expect.deepEqual(actual, expected) for comparing an object in TDD//
+
+## Design Cart
+    - Static design for cart table
+        - header
+            - product name
+            - quantity
+            - price total
+        - footer for order total.
+    - Button to place order.
+
+## Cart Data
+    - Write an array literal that contains object literals for a few ordered in the cart.
+        - Dummy data
+    - Export array.
+
+## TDD findById Function
+    - in utils.js write a function that connects the id to the ghost.name with the same id.
+        -return null if no match.
+    - might need expect.deepequal to complete test
+
+## TDD calcLineItem Function
+    - in utils.js write a function that takes the quantity and price and returns the total
+        -Might need to round result with Math.round(amount * 100) /100
+
+## TDD DOM Render Function
+    - render-line-items.js 
+    - This function takes a cart line item and puts into the html
+        - Copy html from the page
+        - 
