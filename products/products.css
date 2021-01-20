@@ -31,7 +31,7 @@ li {
 
 h3 {
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 li p {
@@ -46,7 +46,8 @@ p.ghost-category {
 img {
     height: 200px;
     width: 200px;
-    padding: 10px 0px 0px 0px;
+    border: 3px rgb(121, 255, 210) solid;
+    border-radius: 2px;
 }
 
 button {
