@@ -60,7 +60,7 @@ export const ghosts =  [
         name: 'Water Ghost',
         img: 'water-ghost.png',
         description: 'Do you ever need to breath underwater? Water Ghost is the very air you need where there is none. They are here for you for any spontaneous diving sessions. *does not supply air in outer space*',
-        category: `care`,
+        category: `skill`,
         price: '1 bottle of rose water',
     },
     {

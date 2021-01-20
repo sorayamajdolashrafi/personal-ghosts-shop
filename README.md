@@ -47,8 +47,8 @@
         - TDD
             //1. Copy/paste the html element
             //2. copy/paste the product data for one listing to use as the input of the function
-            3. Using DOM API, create a static example. Start by creating the top level element and work down (like the warmup).
-            4. Make the test pass, pay attention to the details.
+            //3. Using DOM API, create a static example. Start by creating the top level element and work down (like the warmup).
+            //4. Make the test pass, pay attention to the details.
 
         - Generate Product List
             - Import functions and DOM elements
