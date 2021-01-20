@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { renderGhost } from  '../products/renderGhost.js';
+import { renderGhost } from '../products/renderGhost.js';
 
 const test = QUnit.test;
 

@@ -1,4 +1,4 @@
-export const ghosts =  [
+export const ghosts = [
     {
         id: 1,
         name: 'Skater Ghost',
@@ -71,4 +71,4 @@ export const ghosts =  [
         category: `care`,
         price: '1 bottle of rose water',
     },
-]
+];
