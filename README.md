@@ -113,4 +113,28 @@
     - render-line-items.js 
     - This function takes a cart line item and puts into the html
         - Copy html from the page
-        - 
+        - Copy cart line data for the example
+        - Use DOM API to create a static example from the top level element <tr> for line item
+        - make test pass
+
+## Generate Shopping Cart
+    - Import data, cart and ghosts, DOM generation function and utility functions
+    - Locate the table where the items go
+    - Loop through the data
+        - Create a variable based on the current array index
+        - Use findById to find product for the line item
+        - Pass these to DOM generation function and capture result in variable
+        - Append to the table
+
+## TDD calcOrderTotal
+    - in utils.js take the cart array and ghosts array.
+    - Calculate the total of your cart data.
+        - Create a variable to hold the total
+        - Loop the line items with calcLineItem function and add to order total
+        - Return order total
+        - Might need to round
+
+## Add Order Total to Table
+    - in cart.js import calcOrderTotal
+    - Use function to calculate cart total
+    - Display in total element.
