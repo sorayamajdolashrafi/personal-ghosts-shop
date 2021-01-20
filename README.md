@@ -51,10 +51,10 @@
             //4. Make the test pass, pay attention to the details.
 
         - Generate Product List
-            - Import functions and DOM elements
-            - Locate where the products will go <ul>
-            - Loop through the data.
-                1. create a variable that is the singular of the list and assign based on the current array index 
+            //- Import functions and DOM elements
+            //- Locate where the products will go <ul>
+            //- Loop through the data.
+                //1. create a variable that is the singular of the list and assign based on the current array index 
                     const ghost = ghosts[i];
-                2. Pass to your DOM generation function and capture reult in variable
-                3. Append to the top-level list element.
+                //2. Pass to your DOM generation function and capture reult in variable
+                //3. Append to the top-level list element.
