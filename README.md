@@ -25,14 +25,13 @@
 
 ## Products
     ### html
-        - <ul> to hold the listings
-        - Inital ghost layout posting to be able to visualize it.
-            - Title
-            - Image
-            - Description
-            - Details
-            - Price
-            - Button to add to cart.
+        //- <ul> to hold the listings
+        //- Inital ghost layout posting to be able to visualize it.
+            //- Title
+            //- Image
+            //- Description
+            //- Price
+            //- Button to add to cart.
                 - Value is the product id.
 
     ### js

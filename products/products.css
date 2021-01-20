@@ -1,5 +1,8 @@
 ul {
     width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 li {
