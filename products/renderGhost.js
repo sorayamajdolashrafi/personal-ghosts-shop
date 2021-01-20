@@ -19,7 +19,7 @@ export function renderGhost(ghost) {
     const img = document.createElement('img');
     img.classList.add('ghost-image');
     li.append(img);
-    img.src = `../assets/${ghost.img}`;
+    img.src = `../assets/product-images${ghost.img}`;
     img.alt = ghost.name;
 
     const pDescription = document.createElement('p');
