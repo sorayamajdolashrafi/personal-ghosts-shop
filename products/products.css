@@ -1,17 +1,30 @@
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 ul {
     width: 60%;
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 li {
+    width: 270px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     border: ivory 2px solid;
     border-radius: 2px;
+    margin: 20px;
     padding: 20px;
     box-shadow: ivory -8px 8px;
 }
