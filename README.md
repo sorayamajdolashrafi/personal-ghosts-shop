@@ -1,13 +1,13 @@
 # E-Commerce
 
-## What am I selling?
+## //What am I selling?
     - Ghosts?
     - Art?
     - Tigers?
 
     Ghosts, we're selling ghosts.
 
-## Home
+## //Home
     ### html
         - header
         //- button that links to products page
@@ -23,7 +23,7 @@
             //- background color
             //- text color
 
-## Products
+## //Products
     ### html
         //- <ul> to hold the listings
         //- Inital ghost layout posting to be able to visualize it.
@@ -86,7 +86,7 @@
 
     expect.deepEqual(actual, expected) for comparing an object in TDD//
 
-## Design Cart
+## //Design Cart
     //- Static design for cart table
         //- header
             //- product name
@@ -95,7 +95,7 @@
         //- footer for order total.
     //- Button to place order.
 
-## Cart Data
+## //Cart Data
     //- Write an array literal that contains object literals for a few ordered in the cart.
         //- Dummy data
     //- Export array.
