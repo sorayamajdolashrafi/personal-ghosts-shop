@@ -126,13 +126,13 @@
         //- Pass these to DOM generation function and capture result in variable
         //- Append to the table
 
-## TDD calcOrderTotal
-    - in utils.js take the cart array and ghosts array.
-    - Calculate the total of your cart data.
-        - Create a variable to hold the total
-        - Loop the line items with calcLineItem function and add to order total
-        - Return order total
-        - Might need to round
+## //TDD calcOrderTotal
+    //- in utils.js take the cart array and ghosts array.
+    //- Calculate the total of your cart data.
+        //- Create a variable to hold the total
+        //- Loop the line items with calcLineItem function and add to order total
+        //- Return order total
+        //- Might need to round
 
 ## Add Order Total to Table
     - in cart.js import calcOrderTotal

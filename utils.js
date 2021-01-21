@@ -27,5 +27,3 @@ export function calcOrderTotal(cartData, ghosts) {
 
     return `total: ${total} pieces for the offering`;
 }
-
-//
