@@ -7,6 +7,22 @@ main {
     flex-direction: column;
 }
 
+div.nav-container {
+    width: 60%;
+    height: auto;
+}
+
+h6 {
+    font-size: .7rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+label:hover {
+    color: rgba(255, 255, 240, .5);
+    cursor: pointer;
+}
+
 ul {
     width: 60%;
     height: auto;

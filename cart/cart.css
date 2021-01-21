@@ -73,6 +73,10 @@ h3 {
     padding: 0px;
 }
 
+p {
+    font-size: .7rem;
+}
+
 button {
     height: 30px;
     background: ivory;
