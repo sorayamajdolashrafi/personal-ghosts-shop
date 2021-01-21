@@ -96,9 +96,9 @@
     //- Button to place order.
 
 ## Cart Data
-    - Write an array literal that contains object literals for a few ordered in the cart.
-        - Dummy data
-    - Export array.
+    //- Write an array literal that contains object literals for a few ordered in the cart.
+        //- Dummy data
+    //- Export array.
 
 ## TDD findById Function
     - in utils.js write a function that connects the id to the ghost.name with the same id.
