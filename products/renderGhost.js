@@ -5,7 +5,8 @@ export function renderGhost(ghost) {
         img: 'skater-ghost.png',
         description: 'Do you want to go fast? This rad boy can take you for a ride.',
         category: `skill`,
-        price: '4 skateboard wheels',
+        price: 4,
+        priceCurrency: ' skateboard wheels',
 
     */
     const li = document.createElement('li');
@@ -34,7 +35,7 @@ export function renderGhost(ghost) {
 
     const pPrice = document.createElement('p');
     pPrice.classList.add('ghost-price');
-    pPrice.textContent = `offering: ${ghost.price}`;
+    pPrice.textContent = `offering: ${ghost.price} ${ghost.priceCurrency}`;
     li.append(pPrice);
 
     const button = document.createElement('button');
