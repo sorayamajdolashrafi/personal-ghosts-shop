@@ -5,7 +5,8 @@ export const ghosts = [
         img: 'skater-ghost.png',
         description: 'Do you want to go fast? This rad boy can take you for a ride.',
         category: `skill`,
-        price: '4 skateboard wheels',
+        price: 4,
+        priceCurrency: 'skateboard wheels',
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const ghosts = [
         img: 'pizza-ghost.png',
         description: `Pizza Ghost makes sure your turtle's favorite snack is always on hand.`,
         category: `food`,
-        price: `8 discarded crusts`,
+        price: 8,
+        priceCurrency: 'discarded crusts',
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const ghosts = [
         img: 'opossum-ghost.png',
         description: `Have you ever needed to get out of a situation by playing dead? Well, Opossum Ghost will help you play the deadest of dead and keep you safe.`,
         category: `care`,
-        price: '10 worms',
+        price: 10,
+        priceCurrency: 'worms',
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const ghosts = [
         img: 'off-beat-ghost.png',
         description: 'Off Beat Ghost will ruin every song your enemy ever wants to listen to. The perfect revenge companion.',
         category: `skill`,
-        price: '3 vintage records',
+        price: 3,
+        priceCurrency: 'vintage records',
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const ghosts = [
         img: 'fruit-ghost.png',
         description: 'This total sweetheart of a ghost knows all the seasonal fruits and where to find them and makes sure you know too.',
         category: `food`,
-        price: 'A handful of boysenberries',
+        price: 1,
+        priceCurrency: 'handful of boysenberries',
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const ghosts = [
         img: 'plant-ghost.png',
         description: 'Is your home a graveyard for house plants? This ghost cares for spirits of all the plants you have killed.',
         category: `skill`,
-        price: '7 leaves',
+        price: 7,
+        priceCurrency: 'leaves',
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const ghosts = [
         img: 'bad-photo-ghost.png',
         description: `Bad Photo Ghost knows all your best angles, and they artistically blur you in every photo you look bad in.`,
         category: `care`,
-        price: '15 rolls of film',
+        price: 15,
+        priceCurrency: 'rolls of film',
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const ghosts = [
         img: 'water-ghost.png',
         description: 'Do you ever need to breath underwater? Water Ghost is the very air you need where there is none. They are here for you for any spontaneous diving sessions. *does not supply air in outer space*',
         category: `skill`,
-        price: '1 bubble wand',
+        price: 1,
+        priceCurrency: 'bubble wand',
     },
     {
         id: 9,
@@ -69,6 +77,7 @@ export const ghosts = [
         img: 'human-ghost.png',
         description: `Wrap your lonely heart in the tender embrace of Human Ghost.`,
         category: `care`,
-        price: '1 bottle of rose water',
+        price: 1,
+        priceCurrency: 'bottle of rose water',
     },
 ];

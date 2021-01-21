@@ -105,7 +105,7 @@
         -return null if no match.
     - might need expect.deepequal to complete test
 
-## TDD calcLineItem Function
+## //TDD calcLineItem Function
     - in utils.js write a function that takes the quantity and price and returns the total
         -Might need to round result with Math.round(amount * 100) /100
 
