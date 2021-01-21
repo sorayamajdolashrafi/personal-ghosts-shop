@@ -87,13 +87,13 @@
     expect.deepEqual(actual, expected) for comparing an object in TDD//
 
 ## Design Cart
-    - Static design for cart table
-        - header
-            - product name
-            - quantity
-            - price total
-        - footer for order total.
-    - Button to place order.
+    //- Static design for cart table
+        //- header
+            //- product name
+            //- quantity
+           //- price total
+        //- footer for order total.
+    //- Button to place order.
 
 ## Cart Data
     - Write an array literal that contains object literals for a few ordered in the cart.
