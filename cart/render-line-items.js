@@ -1,3 +1,5 @@
+import { calcLineItem } from '../utils.js';
+
 export function renderLineItems(cartData, ghosts) {
 
     /*<tr class="cart-item">
@@ -21,7 +23,7 @@ export function renderLineItems(cartData, ghosts) {
 
     const tdSubtotal = document.createElement('td');
     tdSubtotal.classList.add('subtotal');
-    tdSubtotal.textContent = `${cartData.quantity * ghosts.price} ${ghosts.priceCurrency}`;
+    tdSubtotal.textContent = `${calcLineItem(cartData.quantity, ghosts.price)} ${ghosts.priceCurrency}`;
     tr.append(tdSubtotal);
 
     return tr;

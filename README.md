@@ -109,22 +109,22 @@
     - in utils.js write a function that takes the quantity and price and returns the total
         -Might need to round result with Math.round(amount * 100) /100
 
-## TDD DOM Render Function
-    - render-line-items.js 
-    - This function takes a cart line item and puts into the html
-        - Copy html from the page
-        - Copy cart line data for the example
-        - Use DOM API to create a static example from the top level element <tr> for line item
-        - make test pass
+## //TDD DOM Render Function
+    //- render-line-items.js 
+    //- This function takes a cart line item and puts into the html
+        //- Copy html from the page
+        //- Copy cart line data for the example
+        //- Use DOM API to create a static example from the top level element <tr> for line item
+        //- make test pass
 
-## Generate Shopping Cart
-    - Import data, cart and ghosts, DOM generation function and utility functions
-    - Locate the table where the items go
-    - Loop through the data
-        - Create a variable based on the current array index
-        - Use findById to find product for the line item
-        - Pass these to DOM generation function and capture result in variable
-        - Append to the table
+## //Generate Shopping Cart
+    //- Import data, cart and ghosts, DOM generation function and utility functions
+    //- Locate the table where the items go
+    //- Loop through the data
+        //- Create a variable based on the current array index
+        //- Use findById to find product for the line item
+        //- Pass these to DOM generation function and capture result in variable
+        //- Append to the table
 
 ## TDD calcOrderTotal
     - in utils.js take the cart array and ghosts array.
