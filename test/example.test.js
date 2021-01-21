@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import { renderGhost } from '../products/renderGhost.js';
-import { findById } from '../utils.js';
+import { findById, calcLineItem } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -56,8 +56,6 @@ test('findById should connect id 6 of the cart item to ghost name with the same 
         },       
     ];
 
-    //Arrange
-    // Set up your arguments and expectations
     const expected = {
         id: 6,
         name: 'Plant Ghost',
@@ -66,15 +64,29 @@ test('findById should connect id 6 of the cart item to ghost name with the same 
         category: `skill`,
         price: '7 leaves',
     };
+
+    const actual = findById(6, ghosts);
+
+    expect.deepEqual(actual, expected);
+
+});
+
+// Test calcLineItem
+
+test('calcLineItem should multiply the quantity, 6, by the price, 7, and return a total of 35', (expect) => {
+
+    const quantity = 6;
+    const price = 7;
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 42;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = findById(6, ghosts);
-
+    const actual = calcLineItem(quantity, price);
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.deepEqual(actual, expected);
-
+    expect.equal(actual, expected);
 });
 
 /*test('expectation', (expect) => {

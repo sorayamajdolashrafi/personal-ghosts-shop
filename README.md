@@ -100,7 +100,7 @@
         //- Dummy data
     //- Export array.
 
-## TDD findById Function
+## //TDD findById Function
     - in utils.js write a function that connects the id to the ghost.name with the same id.
         -return null if no match.
     - might need expect.deepequal to complete test

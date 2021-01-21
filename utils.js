@@ -6,3 +6,10 @@ export function findById(id, array) {
         }
     }
 }
+
+export function calcLineItem(quantity, price) {
+
+    const lineTotal = quantity * price;
+
+    return lineTotal;
+}
