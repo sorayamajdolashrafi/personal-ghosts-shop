@@ -164,13 +164,14 @@
             //- save to local storage.
     - clearCart
 
-## Add Product to Shoping Cart
+## //Add Product to Shoping Cart
     - In the rendersGhosts add an event listener to the button.
         1. getCart
-        2. addToCart
+        //2. addToCart- only needed to this function because it uses getCart and saveCart.
         3. saveCart
 
 ## Get Shopping Cart from localStorage on Shopping Cart Page
+    - Get cart data from local storage.
 
 ## Place Order
 

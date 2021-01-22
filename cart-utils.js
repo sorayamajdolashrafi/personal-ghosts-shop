@@ -1,10 +1,10 @@
 import { findById } from './utils.js';
 
-const CART = 'cartData'; // key
+const cartKey = 'cartData'; // key
 const emptyCart = [];
 
 export function getCart() {
-    const stringCart = localStorage.getItem(CART);
+    const stringCart = localStorage.getItem(cartKey);
     
     if (stringCart) {
         const parsedCart = JSON.parse(stringCart);
@@ -13,7 +13,7 @@ export function getCart() {
     } else {
         const stringEmptyCart = JSON.stringify(emptyCart);
 
-        localStorage.setItem(CART, stringEmptyCart);
+        localStorage.setItem(cartKey, stringEmptyCart);
 
         return emptyCart;
     }
@@ -22,13 +22,13 @@ export function getCart() {
 export function clearCart() {
     const stringEmptyCart = JSON.stringify(emptyCart);
 
-    localStorage.setItem(CART, stringEmptyCart);
+    localStorage.setItem(cartKey, stringEmptyCart);
 }
 
 export function saveCart(cartOrder) {
     const stringCart = JSON.stringify(cartOrder);
 
-    localStorage.setItem(CART, stringCart);
+    localStorage.setItem(cartKey, stringCart);
 }
 
 export function addToCart(id) {
@@ -41,6 +41,7 @@ export function addToCart(id) {
     } else {
         const newCartItem = {
             id: id,
+            name: cart.name,
             quantity: 1,
         };
 
