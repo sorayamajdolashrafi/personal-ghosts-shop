@@ -40,10 +40,31 @@ export function renderGhost(ghost) {
     pPrice.textContent = `offering: ${ghost.price} ${ghost.priceCurrency}`;
     li.append(pPrice);
 
+    const quantityAndButtonDiv = document.createElement('div');
+    quantityAndButtonDiv.classList.add('ghost-button-div');
+    li.append(quantityAndButtonDiv);
+
+    const dropdownQuantity = document.createElement('select');
+    dropdownQuantity.classList.add('ghost-dropdown');
+    dropdownQuantity.id = 'dropdown';
+    quantityAndButtonDiv.append(dropdownQuantity);
+    li.append(dropdownQuantity);
+
+    const dropdownNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    for (let number of dropdownNumbers) {
+        const option = document.createElement('option');
+        option.value = number;
+        option.text = number;
+        dropdownQuantity.append(option);
+        quantityAndButtonDiv.append(dropdownQuantity);
+    }
+
     const button = document.createElement('button');
     button.textContent = `add to cart`;
     button.value = ghost.id;
     li.append(button);
+    quantityAndButtonDiv.append(button);
     button.addEventListener('click', () => {
         const id = button.value;
 

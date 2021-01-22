@@ -16,7 +16,7 @@ main {
 }
 
 div.nav-container {
-    width: 60%;
+    width: 70%;
     height: auto;
 }
 
@@ -74,6 +74,25 @@ img {
     border-radius: 2px;
 }
 
+div.ghost-button-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    height: 30px;
+    background: rgb(27, 27, 27);
+    color: ivory;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border:rgb(27, 27, 27) 3px solid;
+    margin: 0px 5px;
+}
+
 button {
     height: 30px;
     background: ivory;
@@ -82,6 +101,7 @@ button {
     font-weight: 600;
     border: ivory 3px solid;
     border-radius: 5px;
+    margin: 0px 5px;
 }
 
 button:hover {
