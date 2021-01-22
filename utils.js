@@ -19,8 +19,8 @@ export function calcOrderTotal(cartData, ghosts) {
     let total = 0;
 
     for (let item of cartData) {
-        const ghost = findById(item.id, ghosts);
-        const subtotal = calcLineItem(item.quantity, Number(ghost.price));
+        const ghost = findById(Number(item.id), ghosts);
+        const subtotal = calcLineItem(item.quantity, ghost.price);
 
         total = total + subtotal;
     }
