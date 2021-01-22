@@ -2,6 +2,7 @@
 import { renderLineItems } from '../cart/render-line-items.js';
 import { renderGhost } from '../products/renderGhost.js';
 import { findById, calcLineItem, calcOrderTotal } from '../utils.js';
+import { getCart, clearCart, saveCart } from '../cart-utils.js';
 
 const test = QUnit.test;
 
@@ -18,7 +19,7 @@ test('should take in ghost and return li', (expect) => {
         priceCurrency: 'skateboard wheels',
     };
     
-    const expected = `<li class="ghost-item"><h3 class="ghost-name">Skater Ghost</h3><img class="ghost-image" src="../assets/product-images/skater-ghost.png" alt="Skater Ghost"><p class="ghost-description">Do you want to go fast? This rad boy can take you for a ride.</p><p class="ghost-category">category: skill</p><p class="ghost-price">offering: 4 skateboard wheels</p><button value="1">add to cart</button></li>`;
+    const expected = `<li class="ghost-item"><h3 class="ghost-name">Skater Ghost</h3><img class="ghost-image" src="../assets/product-images/skater-ghost.png" alt="Skater Ghost"><p class="ghost-description">Do you want to go fast? This rad boy can take you for a ride.</p><p class="ghost-category">category: skill</p><p class="ghost-price">offering: 4 skateboard wheels</p><div class=\"ghost-button-div\"><select class=\"ghost-dropdown\" id=\"dropdown\"><option id=\"dropdownQuantity\" value=\"1\">1</option><option id=\"dropdownQuantity\" value=\"2\">2</option><option id=\"dropdownQuantity\" value=\"3\">3</option><option id=\"dropdownQuantity\" value=\"4\">4</option><option id=\"dropdownQuantity\" value=\"5\">5</option><option id=\"dropdownQuantity\" value=\"6\">6</option><option id=\"dropdownQuantity\" value=\"7\">7</option><option id=\"dropdownQuantity\" value=\"8\">8</option><option id=\"dropdownQuantity\" value=\"9\">9</option><option id=\"dropdownQuantity\" value=\"10\">10</option></select><button value=\"1\">add to cart</button></div></li>`;
 
     const actual = renderGhost(skaterGhost);
 
@@ -165,6 +166,52 @@ test('The total sum of the subtotals 21, 1, and 60 returns 81', (expect) => {
 
     expect.equal(actual, expected);
 });
+
+// Test for getCart
+test('getCart should check if there is a cart, if so return cart', (expect) => {
+
+    const cartData = [
+        {
+            id: 6,
+            quantity: 3,        
+        },
+        {
+            id: 9,
+            quantity: 1,
+        },
+        {
+            id: 3,
+            quantity: 6,
+        }
+    ];
+    const stringCartData = JSON.stringify(cartData);
+    localStorage.setItem('cartData', stringCartData);
+
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = [
+        {
+            id: 6,
+            quantity: 3,        
+        },
+        {
+            id: 9,
+            quantity: 1,
+        },
+        {
+            id: 3,
+            quantity: 6,
+        }
+    ];
+    //Act 
+    // Call the function you're testing and set the result to a const
+    
+    const actual = getCart();
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
 
 /*test('expectation', (expect) => {
 

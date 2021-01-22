@@ -180,8 +180,8 @@
         - Remove cart from local storage (.removeItem)
         - Redirect users back to home page.
 
-## Stretch: Add Quantity of Products
-    - Add a quantity drop-down to renderGhosts that is added to the cart when add button is clicked.
+## //Stretch: Add Quantity of Products
+    //- Add a quantity drop-down to renderGhosts that is added to the cart when add button is clicked.
 
 ## Stretch: TDD
     -Write tests for
