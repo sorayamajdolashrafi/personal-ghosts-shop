@@ -1,7 +1,7 @@
 import { renderLineItems } from './render-line-items.js';
 import { findById, calcOrderTotal } from '../utils.js';
 import { ghosts } from '../products/ghosts.js';
-import { getCart } from '../cart-utils.js';
+import { getCart, clearCart } from '../cart-utils.js';
 
 const buttonBackToProducts = document.getElementById('link-to-products');
 const checkoutTable = document.getElementById('checkoutTable');
@@ -20,24 +20,31 @@ for (let item of cartData) {
 
 }
 
-orderTotal.append(calcOrderTotal(cartData, ghosts));
+if (cartData > [0]) {
+    orderTotal.append(calcOrderTotal(cartData, ghosts));
+    buttonPlaceOrder.hidden = false;
+}
 
-
-// Link back to product page
-buttonBackToProducts.addEventListener('click', () => {
-
-    window.location.href = '../products/';
-    
-});
-
-
+// PlaceOrder button actions to humor lab excersice
 buttonPlaceOrder.addEventListener('click', () => {
 
+    //display alert
+    alert(JSON.stringify(cartData, true, 2));
+    //remove cart from local storage
+    clearCart();
+    //redirect user back to home page
     checkoutTable.style.display = 'none';
 
     const p = document.createElement('p');
     p.textContent = 'Thank you for your order, your ghosts will be with you shortly.';
 
     thanksMessage.append(p);
+    
+});
+
+// Link back to product page
+buttonBackToProducts.addEventListener('click', () => {
+
+    window.location.href = '../products/';
     
 });

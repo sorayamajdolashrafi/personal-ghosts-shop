@@ -143,7 +143,7 @@
 
 # Data Persistence
 
-## Write Functions in cart-utils.js
+## //Write Functions in cart-utils.js
     //- getCart
         - To retrieve existing shopping cart from localStorage
             - If there is no cart in data in localStorage use an empty array [].
@@ -162,7 +162,7 @@
         //- Save the modified cart array back in localStorage to serialize with JSON.stringify before saving.
             //- stringify cart
             //- save to local storage.
-    - clearCart
+    //- clearCart
 
 ## //Add Product to Shoping Cart
     - In the rendersGhosts add an event listener to the button.
@@ -170,10 +170,15 @@
         //2. addToCart- only needed to this function because it uses getCart and saveCart.
         3. saveCart
 
-## Get Shopping Cart from localStorage on Shopping Cart Page
-    - Get cart data from local storage.
+## //Get Shopping Cart from localStorage on Shopping Cart Page
+    //- Get cart data from local storage.
 
 ## Place Order
+    //- If cart is empty disable place order button
+    - In the event listener
+        //- display an 'alert' with the contents of the cart (JSON.stringify(cart, true, 2))
+        - Remove cart from local storage (.removeItem)
+        - Redirect users back to home page.
 
 ## Stretch: Add Quantity of Products
 
