@@ -54,6 +54,7 @@ export function renderGhost(ghost) {
 
     for (let number of dropdownNumbers) {
         const option = document.createElement('option');
+        option.id = 'dropdownQuantity';
         option.value = number;
         option.text = number;
         dropdownQuantity.append(option);
@@ -67,8 +68,9 @@ export function renderGhost(ghost) {
     quantityAndButtonDiv.append(button);
     button.addEventListener('click', () => {
         const id = button.value;
+        const addQuantity = Number(dropdownQuantity.value);
 
-        addToCart(id);
+        addToCart(id, addQuantity);
 
     });
 

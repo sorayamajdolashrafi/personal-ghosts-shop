@@ -31,7 +31,8 @@ export function saveCart(cartOrder) {
     localStorage.setItem(cartKey, stringCart);
 }
 
-export function addToCart(id) {
+//works without dropdown menu
+/*export function addToCart(id) {
     
     const cart = getCart();
     const cartItem = findById(id, cart);
@@ -43,6 +44,27 @@ export function addToCart(id) {
             id: id,
             name: cart.name,
             quantity: 1,
+        };
+
+        cart.push(newCartItem);
+    }
+
+    saveCart(cart);
+}*/
+
+export function addToCart(id, option) {
+    
+    const cart = getCart();
+    const cartItem = findById(id, cart);
+    const addQuantity = option;
+    
+    if (cartItem) {
+        cartItem.quantity += addQuantity;
+    } 
+    else {
+        const newCartItem = {
+            id: id,
+            quantity: addQuantity,
         };
 
         cart.push(newCartItem);
