@@ -1,3 +1,5 @@
+import { addToCart } from '../cart-utils.js';
+
 export function renderGhost(ghost) {
     /*  
         id: 1,
@@ -42,6 +44,12 @@ export function renderGhost(ghost) {
     button.textContent = `add to cart`;
     button.value = ghost.id;
     li.append(button);
+    button.addEventListener('click', () => {
+        const id = button.value;
+
+        addToCart(id);
+
+    });
 
     return li;
 }

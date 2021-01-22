@@ -6,7 +6,6 @@ import { findById, calcLineItem, calcOrderTotal } from '../utils.js';
 const test = QUnit.test;
 
 // Test for renderGhost()
-
 test('should take in ghost and return li', (expect) => {
     
     const skaterGhost = {
@@ -27,7 +26,6 @@ test('should take in ghost and return li', (expect) => {
 });
 
 // Test for findById()
-
 test('findById should connect id 6 of the cart item to ghost name with the same id and return Plant Ghost', (expect) => {
 
     const ghosts = [
@@ -73,7 +71,6 @@ test('findById should connect id 6 of the cart item to ghost name with the same 
 });
 
 // Test calcLineItem
-
 test('calcLineItem should multiply the quantity, 6, by the price, 7, and return a total of 35', (expect) => {
 
     const quantity = 6;
@@ -87,7 +84,6 @@ test('calcLineItem should multiply the quantity, 6, by the price, 7, and return 
 });
 
 // Test renderLineItems
-
 test('renderLineItem should take in a cart item and returns table elements', (expect) => {
 
     const cartData = {
@@ -117,7 +113,6 @@ test('renderLineItem should take in a cart item and returns table elements', (ex
 });
 
 // Test calcOrderTotal
-
 test('The total sum of the subtotals 21, 1, and 60 returns 81', (expect) => {
 
     const cartData = [

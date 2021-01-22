@@ -59,7 +59,7 @@
                 //2. Pass to your DOM generation function and capture reult in variable
                 //3. Append to the top-level list element.
 
-## Cart
+# Cart
 
 //notes:
     1. Get the ghost id from the cart.
@@ -134,7 +134,46 @@
         //- Return order total
         //- Might need to round
 
-## Add Order Total to Table
+## //Add Order Total to Table
     - in cart.js import calcOrderTotal
     - Use function to calculate cart total
     - Display in total element.
+
+
+
+# Data Persistence
+
+## Write Functions in cart-utils.js
+    //- getCart
+        - To retrieve existing shopping cart from localStorage
+            - If there is no cart in data in localStorage use an empty array [].
+            //- If there is cart data in localStorage, turn into array using JSON.parse
+    //- addToCart
+       // - Check if shopping cart already has the item with findById()
+           // - If it does, increment value
+            //- If it does not exist create a new line item with:
+
+                const lineItem = {
+                    id: <product-id>,
+                    quantity: 1,
+                };
+            //- Add new line to cart.
+    //- saveCart
+        //- Save the modified cart array back in localStorage to serialize with JSON.stringify before saving.
+            //- stringify cart
+            //- save to local storage.
+    - clearCart
+
+## Add Product to Shoping Cart
+    - In the rendersGhosts add an event listener to the button.
+        1. getCart
+        2. addToCart
+        3. saveCart
+
+## Get Shopping Cart from localStorage on Shopping Cart Page
+
+## Place Order
+
+## Stretch: Add Quantity of Products
+
+## Stretch: Move Data Work to Function
