@@ -36,7 +36,7 @@ buttonPlaceOrder.addEventListener('click', () => {
     checkoutTable.style.display = 'none';
 
     const p = document.createElement('p');
-    p.textContent = 'Thank you for your order, your ghosts will be with you shortly.';
+    p.textContent = 'Thank you for your order, your ghosts will be with you shortly. Please have your offering waiting for them.';
 
     thanksMessage.append(p);
     

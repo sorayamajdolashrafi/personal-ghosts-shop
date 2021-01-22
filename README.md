@@ -173,7 +173,7 @@
 ## //Get Shopping Cart from localStorage on Shopping Cart Page
     //- Get cart data from local storage.
 
-## Place Order
+## //Place Order
     //- If cart is empty disable place order button
     - In the event listener
         //- display an 'alert' with the contents of the cart (JSON.stringify(cart, true, 2))
@@ -181,5 +181,10 @@
         - Redirect users back to home page.
 
 ## Stretch: Add Quantity of Products
+    - Add a quantity drop-down to renderGhosts that is added to the cart when add button is clicked.
 
-## Stretch: Move Data Work to Function
+## Stretch: TDD
+    -Write tests for
+        - getCart
+        - clearCart
+        - saveCart
