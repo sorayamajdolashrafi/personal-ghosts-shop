@@ -183,8 +183,8 @@
 ## //Stretch: Add Quantity of Products
     //- Add a quantity drop-down to renderGhosts that is added to the cart when add button is clicked.
 
-## Stretch: TDD
+## //Stretch: TDD
     -Write tests for
-        - getCart
-        - clearCart
-        - saveCart
+        //- getCart
+        //- clearCart
+        //- saveCart

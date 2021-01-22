@@ -257,15 +257,11 @@ test('saveCart should take the items in tha cart and save them to localStorage',
         }
     ];
     const stringCartData = JSON.stringify(cartData);
-    
-    //Arrange
-    // Set up your arguments and expectations
+
     const expected = localStorage.setItem('cartData', stringCartData);
-    //Act 
-    // Call the function you're testing and set the result to a const
+
     const actual = saveCart(cartData);
-    //Expect
-    // Make assertions about what is expected versus the actual result
+
     expect.deepEqual(actual, expected);
 });
 
