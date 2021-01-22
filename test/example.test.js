@@ -239,6 +239,35 @@ test('clearCart should empty localStorage and return an empty cart array.', (exp
     expect.deepEqual(actual, expected);
 });
 
+// Test for saveCart
+test('saveCart should take the items in tha cart and save them to localStorage', (expect) => {
+
+    const cartData = [
+        {
+            id: 6,
+            quantity: 3,        
+        },
+        {
+            id: 9,
+            quantity: 1,
+        },
+        {
+            id: 3,
+            quantity: 6,
+        }
+    ];
+    const stringCartData = JSON.stringify(cartData);
+    
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = localStorage.setItem('cartData', stringCartData);
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = saveCart(cartData);
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
 
 /*test('expectation', (expect) => {
 
