@@ -188,3 +188,80 @@
         //- getCart
         //- clearCart
         //- saveCart
+
+# Stretch :Product Entry (3pts)
+
+## Design Product Entry
+    - Make admin folder
+        - index.html make a static form for necessary data for adding a product.
+        - Add links to all pages in the header.
+    - Replace all uses of hard coded products with products in local storage.
+        - Products page and cart page need to use localStorage to reference ghosts.
+        - Function seedAndGetProducts to check if there are any products in localStorage and returns them. Else it sets the hard coded products into local storage and returns products.
+
+## TDD API Method for Add Product
+    - in utils.js write addProduct function
+        - Retrieve existing ghosts array
+        - Push new ghost to ghosts array
+        - Re-save ghosts to localStorage.
+
+
+    - Test
+        - add a product
+        - retrieve all products
+        - assert deepEqual the last item in the array and the new product.
+        
+        - Call addProduct
+        - check local storage to see if product was added.
+
+
+
+## Form Submit Event
+    - in product-entry.js
+        - Get reference to the form
+        - subscribe to submit event
+        - Call event.preventDefault()
+        - Create a 'new FormData' object passing in the form
+        - Make a new product object from the formData (form.get)
+        - Call your new store addProduct() with the object
+        - Reset form.
+
+## Stretch Remove a Product
+    - On product entry page render a list of products with a remove button (like renderGhosts)
+    - Add a function removeProduct
+        - find by id
+        - remove from array
+    - Use removeProduct on remove button event listener
+
+# Personal Goals
+
+## Home Page
+    - Welcome story
+    - Welcome image
+    - Extra rad link to the ghosts page
+
+## Header
+    - Nav menu between pages
+
+## Images
+    - Make a ghost cart image
+    - Welcome image
+    - Refine og ghosts
+    - Offering image
+
+## Cart
+    - Redirect to offerings page on purchase
+
+## Offerings page
+    - Reciept of offering elements and which ghosts to expect
+    - Place your offerings here
+    - Directions for offerings
+    - Interactive alter??
+        - What?
+            - Drag and drop? No, too hard.
+            - List of offering items with switch? Number input?
+            - How to verify the correct number of items per ghost?
+                - Intake ghost and quantity by id from localStorage (remove clearCart from purchase button)
+                - Function similar to cart that verifys lineitem total to activate ghost animation.
+        - How?
+        - Animated ghosts as a reward?
