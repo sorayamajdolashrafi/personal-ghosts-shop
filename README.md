@@ -240,8 +240,8 @@
     - Welcome image
     - Extra rad link to the ghosts page
 
-## Header
-    - Nav menu between pages
+## //Header
+    //- Nav menu between pages
 
 ## Products Page
     - Add to cart button that floats
