@@ -18,7 +18,62 @@ body, html {
     color: ivory;
 }
 
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Bungee Shade', cursive;
     font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -40px 0px 50px 0px;
+    padding: 0px;
+}
+
+ul.nav-ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li.nav-li {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+a {
+    color: ivory;
+    font-size: .7rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover {
+    color: rgba(255, 255, 240, .5);
+    cursor: default;
+}
+
+a:visited {
+    color: rgb(121, 255, 210);
 }

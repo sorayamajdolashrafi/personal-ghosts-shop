@@ -243,6 +243,9 @@
 ## Header
     - Nav menu between pages
 
+## Products Page
+    - Add to cart button that floats
+
 ## Images
     - Make a ghost cart image
     - Welcome image
