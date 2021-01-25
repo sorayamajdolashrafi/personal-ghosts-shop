@@ -249,7 +249,7 @@
 ## Images
     - Make a ghost cart image
     - Welcome image
-    - Refine og ghosts
+    //- Refine og ghosts
     - Offering image
 
 ## Cart
@@ -268,3 +268,4 @@
                 - Function similar to cart that verifys lineitem total to activate ghost animation.
         - How?
         - Animated ghosts as a reward?
+v
